@@ -1,0 +1,10 @@
+.overlay-stuff{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.mapview-container {
+    flex: 1;
+    background: #ccc;
+  }

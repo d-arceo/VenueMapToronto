@@ -1,0 +1,9 @@
+<div class="event-card" *ngFor="let event of events">
+    <img [src]="event.imageUrl" alt="event thumbnail">
+    <div class="info">
+      <h3>{{ event.name }}</h3>
+      <p><span class="open">Open</span> until {{ event.closeTime }}</p>
+      <p>{{ event.venue }}</p>
+      <p>{{ event.distance }} km away</p>
+    </div>
+  </div>
