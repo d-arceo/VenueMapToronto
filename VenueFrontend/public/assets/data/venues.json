@@ -1,0 +1,32 @@
+{
+
+    "venues": [
+        {
+            "id": 1,
+            "name": "Insert Show 1",
+            "imageUrl": "assets/images/hardluck.png",
+            "closeTime": "9:00PM",
+            "venue": "Hardluck Bar",
+            "distance": 2.3
+        },
+        {
+            "id": 2,
+            "name": "Insert Show 2",
+            "imageUrl": "assets/images/drake.jpg",
+            "closeTime": "9:00PM",
+            "venue": "Drake Underground",
+            "distance": 4
+        },
+        {
+            "id": 3,
+            "name": "Insert Show 3",
+            "imageUrl": "assets/images/monarch.jpg",
+            "closeTime": "9:00PM",
+            "venue": "Monarch Tavern",
+            "distance": 3.2
+        }
+
+    ]
+
+
+}
