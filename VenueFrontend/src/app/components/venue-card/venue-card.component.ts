@@ -22,6 +22,13 @@ export class VenueCardComponent {
       closeTime: '11:00PM',
       venue: 'Monarch Tavern',
       distance: 4.5
-    }
+    },
+    {
+      name: 'Insert Show 3',
+      imageUrl: 'https://placekitten.com/400/200',
+      closeTime: '9:00PM',
+      venue: 'Hardluck Bar',
+      distance: 2.3
+    },
   ];
 }
