@@ -1,22 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Venue } from '../../models/venues';
 import { VenueService } from '../../services/venue.service';
 
 @Component({
   selector: 'app-venue-card',
+  standalone: true,
   imports: [CommonModule],
   templateUrl: './venue-card.component.html',
-  styleUrl: './venue-card.component.css'
+  styleUrls: ['./venue-card.component.css']
 })
-export class VenueCardComponent implements OnInit {
-  events: Venue[] = [];
+export class VenueCardComponent  {
+  @Input() venue!: Venue;
 
-  constructor(private venueService: VenueService) {}
+  showEvents: boolean = false;
 
-  ngOnInit(): void {
-    this.venueService.getVenues().subscribe((venues) => {
-      this.events = venues;
-    });
+  toggleEvents() {
+    this.showEvents = !this.showEvents;
   }
 }

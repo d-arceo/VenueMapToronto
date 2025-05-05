@@ -18,7 +18,7 @@ export class MapViewComponent implements AfterViewInit {
 
     this.map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/kevinch65/cma1sg24e00b701s54z9b8jl3',
+      style: 'mapbox://styles/mapbox/dark-v10',
       center: [-79.3832, 43.6532], 
       zoom: 12,
       accessToken: environment.mapboxToken

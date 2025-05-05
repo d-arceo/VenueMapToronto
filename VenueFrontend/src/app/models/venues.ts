@@ -1,8 +1,17 @@
-export interface Venue {
-    id:number;
-    name:string;
-    imageUrl:string;
-    closeTime:string;
-    venue:string;
-    distance:number;
-}
+export interface Event {
+    E_id: number;
+    name: string;
+    genre: string;
+    lineUp: string[];
+    Date: string;
+    Description: string;
+  }
+  
+  export interface Venue {
+    V_id: number;
+    venue: string;
+    imageUrl: string;
+    address: string;
+    distance: number;
+    events: Event[];
+  }

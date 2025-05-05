@@ -1,9 +1,28 @@
-<div class="event-card" *ngFor="let event of events">
-    <img [src]="event.imageUrl" alt="event thumbnail">
+<div class="event-card">
+    <img [src]="venue.imageUrl" alt="{{ venue.venue }} image" />
+  
     <div class="info">
-      <h3>{{ event.name }}</h3>
-      <p><span class="open">Open</span> until {{ event.closeTime }}</p>
-      <p>{{ event.venue }}</p>
-      <p>{{ event.distance }} km away</p>
+      <h3>{{ venue.venue }}</h3>
+      
+      <p>{{ venue.address }}</p>
+      <p>{{ venue.distance }} km away</p>
+  
+      <!-- Toggle Button -->
+      <button class="toggle-button" (click)="toggleEvents()">
+        {{ showEvents ? 'Hide Events' : 'View Events' }}
+      </button>
+  
+      <!-- Events Detail Card -->
+      <div *ngIf="showEvents" class="event-detail-card">
+        <h4>Events at {{ venue.venue }}</h4>
+        
+        <div class="event" *ngFor="let event of venue.events">
+          <p><strong>{{ event.name }}</strong> ({{ event.genre }})</p>
+          <p>{{ event.Date }}</p>
+          <p><em>Line-up:</em> {{ event.lineUp.join(', ') }}</p>
+          <hr />
+        </div>
+      </div>
     </div>
   </div>
+  

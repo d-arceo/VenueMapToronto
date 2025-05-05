@@ -1,10 +1,10 @@
 <div class="sidebar-container">
     <div class="sidebar-header">
       <h2>Toronto Shows</h2>
-      <button mat-button>Closest</button>
-      <button mat-button>All</button>
+      <button mat-button>Button 1</button>
+      <button mat-button>Button 2</button>
     </div>
     <div class="venue-list">
-        <app-venue-card></app-venue-card>
+        <app-venue-card *ngFor="let venue of venues" [venue]="venue"></app-venue-card>
     </div>
   </div>
