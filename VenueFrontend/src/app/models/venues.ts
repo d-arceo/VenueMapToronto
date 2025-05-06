@@ -5,6 +5,7 @@ export interface Event {
     lineUp: string[];
     Date: string;
     Description: string;
+    Eimage:string
   }
   
   export interface Venue {

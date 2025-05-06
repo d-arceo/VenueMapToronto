@@ -1,0 +1,15 @@
+.full-event-card {
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  
+  .event-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+  }
