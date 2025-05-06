@@ -20,8 +20,17 @@ export class MapViewComponent implements AfterViewInit {
       container: 'map',
       style: 'mapbox://styles/mapbox/dark-v10',
       center: [-79.3832, 43.6532], 
-      zoom: 12,
+      zoom: 12, 
+      pitch: 45, // tilts map 45 degrees
+      bearing: -17.6, // rotates map for dynamic view
       accessToken: environment.mapboxToken
     });
+
+    this.map.on('load', () => {
+      this.map.setTerrain({
+        source: 'mapbox-dem',
+        exaggeration: 1.5 // exaggerate terrain height
+      });
+    })
   }
 }
