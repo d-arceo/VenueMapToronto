@@ -18,9 +18,9 @@ export class MapViewComponent implements AfterViewInit {
 
     this.map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/mapbox/dark-v10',
-      center: [-79.3832, 43.6532], 
-      zoom: 12, 
+      style: 'mapbox://styles/arceodan/cmad61o0800ar01s81b842d6a', // basic 3D style
+      center: [-79.483006, 43.665544], 
+      zoom: 18, 
       pitch: 45, // tilts map 45 degrees
       bearing: -17.6, // rotates map for dynamic view
       accessToken: environment.mapboxToken
