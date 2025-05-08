@@ -1,18 +1,24 @@
-<div class="full-event-card">
+<div class="event-modal-backdrop" (click)="close()"></div>
+
+<div class="event-modal">
+  <div class="full-event-card">
+    <button class="close-button" (click)="close()">×</button>
+
     <h3>{{ event.name }}</h3>
-  
-    <img 
-      [src]="event.Eimage || fallbackImageUrl" 
-      alt="{{ event.name }} image" 
+
+    <img
+      [src]="event.Eimage || fallbackImageUrl"
+      alt="{{ event.name }} image"
       class="event-image"
     />
-  
+
     <p><strong>Genre:</strong> {{ event.genre }}</p>
     <p><strong>Date:</strong> {{ event.Date }}</p>
     <p><strong>Description:</strong> {{ event.Description }}</p>
-  
+
     <p><strong>Line-up:</strong></p>
     <ul>
       <li *ngFor="let artist of event.lineUp">{{ artist }}</li>
     </ul>
   </div>
+</div>

@@ -1,12 +1,4 @@
-export interface Event {
-    E_id: number;
-    name: string;
-    genre: string;
-    lineUp: string[];
-    Date: string;
-    Description: string;
-    Eimage:string
-  }
+import { Event } from "./events";
   
   export interface Venue {
     V_id: number;
