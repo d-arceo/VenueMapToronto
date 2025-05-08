@@ -7,12 +7,10 @@
       <p>{{ venue.address }}</p>
       <p>{{ venue.distance }} km away</p>
   
-      <!-- Toggle Button -->
       <button class="toggle-button" (click)="toggleEvents()">
         {{ showEvents ? 'Hide Events' : 'View Events' }}
       </button>
   
-      <!-- Events Detail Card -->
       <div *ngIf="showEvents" class="event-detail-card">
         <h4>Events at {{ venue.venue }}</h4>
         
@@ -20,6 +18,7 @@
           <p><strong>{{ event.name }}</strong> ({{ event.genre }})</p>
           <p>{{ event.Date }}</p>
           <p><em>Line-up:</em> {{ event.lineUp.join(', ') }}</p>
+          <button class="more-info-btn" (click)="bookEvent(event.name)">More Info</button>
           <hr />
         </div>
       </div>
