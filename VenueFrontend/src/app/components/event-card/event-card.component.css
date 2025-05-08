@@ -33,8 +33,11 @@
     color: #fff;
     cursor: pointer;
   }
-  .event-image{
-    height: 150px;
-    width: 250px;
+  .event-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    object-fit: cover;
   }
   
