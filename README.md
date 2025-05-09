@@ -1,2 +1,2 @@
 # VenueMapToronto
-LinkedIn Cloud Venue mapping project (give us job please)
+An interactive map using Mapbox and Eventbrite APIs to showcase local concerts and events happening in the GTA in realtime.
