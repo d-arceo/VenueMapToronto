@@ -1,1 +1,12 @@
-<p>artist-card works!</p>
+<h2>{{ artist.name }}</h2>
+
+<img
+  [src]="artist.bioPicUrl"
+  alt="{{ artist.name }} photo"
+  class="artist-image"
+/>
+
+<p><strong>Genre:</strong> {{ artist.genre }}</p>
+<p><strong>Description:</strong> {{ artist.description }}</p>
+
+<a [href]="artist.artistLink" target="_blank">Visit Profile</a>

@@ -5,7 +5,7 @@ import { Observable, map } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class ArtistService {
-  private url = 'assets/data/artists.json';
+  private url = 'assets/data/artist.json';
 
   constructor(private http: HttpClient) {}
 

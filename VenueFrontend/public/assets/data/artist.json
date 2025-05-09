@@ -5,18 +5,18 @@
         "name": "KOTO?",
         "genre": "Hip-Hop",
         "description": "Toronto-based underground rapper known for lyrical flows.",
-        "events": [2], 
+        "events": [1], 
         "artistLink": "https://www.instagram.com/kill.koto/",
-        "bioPicUrl": "assets/images/artists/koto.jpg"
+        "bioPicUrl": "assets/images/koto.jpg"
       },
       {
         "A_id": 2,
         "name": "Full Deck",
         "genre": "Rock",
         "description": "Hard-hitting rock band from Mississauga.",
-        "events": [1],
+        "events": [2],
         "artistLink": "https://www.instagram.com/arkyyyyy/",
-        "bioPicUrl": "assets/images/artists/fulldeck.jpg"
+        "bioPicUrl": "assets/images/fulldeck.jpg"
       }
     ]
   }
