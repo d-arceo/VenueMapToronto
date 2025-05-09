@@ -1,8 +1,6 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, Input} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Event } from '../../models/events';
-import { ActivatedRoute } from '@angular/router';
-import { EventService } from '../../services/event.service';
 @Component({
   selector: 'app-event-card',
   imports: [CommonModule],
