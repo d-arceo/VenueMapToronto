@@ -6,7 +6,6 @@
   </div>
 
      <div class="social-links-column">
-      <!-- Your profile -->
       <div class="profile-links">
         <span class="profile-name">Kev's Links</span>
         <button mat-icon-button aria-label="Kevin's GitHub">
@@ -21,7 +20,6 @@
         </button>
       </div>
 
-      <!-- Collaborator profile -->
       <div class="profile-links">
         <span class="profile-name">Dan's Links</span>
         <button mat-icon-button aria-label="Collaborator GitHub">
@@ -38,10 +36,9 @@
     </div>
   </div>
 
-  <!-- Filter Section Placeholder -->
   <div class="filter-section">
-    <h4>Filter Venues</h4>
-    <!-- Add filters here later (e.g. dropdowns, checkboxes) -->
+    <h4 class="section-heading">Filter Venues</h4>
+   <!-- Add more stuff here reguarding filters -->
   </div>
     <div class="venue-list">
         <app-venue-card *ngFor="let venue of venues" [venue]="venue"></app-venue-card>

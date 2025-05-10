@@ -36,15 +36,15 @@
 }
 
 .profile-name {
-  font-weight: 800;
+  font-weight: 600;
   margin-bottom: 0.25rem;
   font-size: 0.9rem;
   font-family: 'Inter', sans-serif;
 }
 
 .profile-links img {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   filter: grayscale(1);
   transition: filter 0.2s;
 }
@@ -54,8 +54,21 @@
 }
 
 .filter-section {
-  padding: 1rem;
+  padding: 1rem 0 0.5rem 0;
+  margin-bottom: 1rem;
   border-top: 1px solid #ccc;
+  
+}
+.section-heading {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #f3f2f2;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.25rem;
 }
   .venue-list {
     flex-grow: 1; 
