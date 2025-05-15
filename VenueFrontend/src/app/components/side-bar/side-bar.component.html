@@ -1,39 +1,16 @@
-<div class="sidebar-container">
-    <!-- Header -->
+<div class="sidebar-container" [ngClass]="{ 'collapsed': isCollapsed }">
+  <button 
+    mat-icon-button 
+    class="collapse-button"
+    [ngClass]="{ 'collapsed-position': isCollapsed }"
+    (click)="toggleSidebar()" 
+    aria-label="Toggle Sidebar">
+    <mat-icon>{{ isCollapsed ? 'chevron_right' : 'chevron_left' }}</mat-icon>
+  </button>
+  <div *ngIf="!isCollapsed">
   <div class="sidebar-header">
     <div class="sidebar-title">
     <h2>Toronto Shows</h2>
-  </div>
-
-     <div class="social-links-column">
-      <div class="profile-links">
-        <span class="profile-name">Kev's Links</span>
-        <button mat-icon-button aria-label="Kevin's GitHub">
-          <a href="https://github.com/KevinChaves65" target="_blank">
-            <img src="assets/icons/github.svg" alt="GitHub" />
-          </a>
-        </button>
-        <button mat-icon-button aria-label="Kevin's LinkedIn">
-          <a href="https://www.linkedin.com/in/kevin-chaves65/" target="_blank">
-            <img src="assets/icons/linkedin.svg" alt="LinkedIn" />
-          </a>
-        </button>
-      </div>
-
-      <div class="profile-links">
-        <span class="profile-name">Dan's Links</span>
-        <button mat-icon-button aria-label="Collaborator GitHub">
-          <a href="https://github.com/d-arceo" target="_blank">
-            <img src="assets/icons/github.svg" alt="GitHub" />
-          </a>
-        </button>
-        <button mat-icon-button aria-label="Collaborator LinkedIn">
-          <a href="https://www.linkedin.com/in/danielarceo/" target="_blank">
-            <img src="assets/icons/linkedin.svg" alt="LinkedIn" />
-          </a>
-        </button>
-      </div>
-    </div>
   </div>
 
   <div class="filter-section">
@@ -44,3 +21,4 @@
         <app-venue-card *ngFor="let venue of venues" [venue]="venue"></app-venue-card>
     </div>
   </div>
+</div>
