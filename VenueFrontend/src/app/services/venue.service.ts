@@ -16,4 +16,25 @@ import { Venue } from '../models/venues';
         map(response => response.venues)
       );
     }
+    getVenuesGeoJSON(): Observable<any> {
+    return this.getVenues().pipe(
+      map(venues => ({
+        type: 'FeatureCollection',
+        features: venues.map(venue => ({
+          type: 'Feature',
+          geometry: {
+            type: 'Point',
+            coordinates: [venue.longitude, venue.latitude]
+          },
+          properties: {
+          V_id: venue.V_id,
+          venue: venue.venue,
+          imageUrl: venue.imageUrl,
+          address: venue.address,
+          eventIds: venue.eventIds
+          }
+        }))
+      }))
+    );
+  }
   }

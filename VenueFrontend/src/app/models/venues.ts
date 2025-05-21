@@ -1,10 +1,10 @@
-import { Event } from "./events";
-  
   export interface Venue {
-    V_id: number;
+    V_id: string;
     venue: string;
     imageUrl: string;
     address: string;
     distance: number;
-    events: Event[];
+    eventIds: string[];
+    latitude: number,
+    longitude: number,
   }
